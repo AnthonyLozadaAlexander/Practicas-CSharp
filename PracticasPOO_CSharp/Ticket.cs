@@ -9,7 +9,6 @@ public class Ticket
 
     public Ticket()
     {
-        
     }
 
     public Ticket(Pedidos pedidos)
@@ -19,9 +18,8 @@ public class Ticket
 
     public string mostrarDatos()
     {
-        string info = $"Nombre: {_pedidos.nombreCliente}\n Producto: {_pedidos.nombreProducto}\n Direccion Cliente: " + 
-            $"{_pedidos.direccionCliente}\n Precio: {_pedidos.precioProducto}\n";
-        
+        string info = $"Nombre: {_pedidos.nombreCliente}\n Producto: {_pedidos.nombreProducto}\n Direccion Cliente: " +
+                      $"{_pedidos.direccionCliente}\n Precio: {_pedidos.precioProducto}\n Fecha: {_pedidos.fecha}\n";
         return info;
     }
 }

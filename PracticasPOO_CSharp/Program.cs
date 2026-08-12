@@ -11,7 +11,8 @@ namespace Practicas
                 nombreCliente = "Franchesco",
                 nombreProducto = "Mouse",
                 direccionCliente = "Peru",
-                precioProducto = 4.5
+                precioProducto = 4.5,
+                fecha = DateTime.Now
             };
 
             Ticket ticket = new Ticket(pedidos);
