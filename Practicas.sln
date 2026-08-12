@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticasPOO_CSharp", "PracticasPOO_CSharp\PracticasPOO_CSharp.csproj", "{4D809ED1-392B-4893-AD44-C4D68A167A66}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica_PedidoBasicoPOO", "Practica_PedidoBasicoPOO\Practica_PedidoBasicoPOO.csproj", "{4D809ED1-392B-4893-AD44-C4D68A167A66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
