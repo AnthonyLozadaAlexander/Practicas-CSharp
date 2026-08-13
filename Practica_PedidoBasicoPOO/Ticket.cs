@@ -1,4 +1,5 @@
-﻿namespace Practicas;
+﻿
+namespace Practicas;
 
 public class Ticket
 {
@@ -23,3 +24,7 @@ public class Ticket
         return info;
     }
 }
+
+
+
+
