@@ -11,6 +11,7 @@ namespace LogicaProgramacion
             /*result = Logica.EjercicioAnioBisisesto();
             Console.WriteLine("El anio ingresado es Bisiesto: " + (result ? "Si" : "No"));*/
             
+            Logica.EjercicioFibonacci();
         }
     }
 }

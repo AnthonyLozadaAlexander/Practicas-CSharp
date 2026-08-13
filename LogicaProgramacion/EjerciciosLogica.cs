@@ -28,5 +28,33 @@ public class EjerciciosLogica
         
         return result;
     }
+
+    public void EjercicioFibonacci()
+    {
+        int c = 0, a = 0, b = 1, n = 0;
+        Console.WriteLine("Ingrese el limite de la secuencia: ");
+        n = Int32.Parse(Console.ReadLine());
+        Console.Write($"{a} , {b} ,");
+        if (n > 0)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                c = a + b;
+                if (i < n - 1)
+                {
+                    Console.Write($" {c}");
+                    Console.Write(" ,");
+                }
+                else
+                {
+                    Console.Write($" {c}");
+                }
+
+                a = b;
+                b = c;
+            }
+        }
+
+    }
 }
 
