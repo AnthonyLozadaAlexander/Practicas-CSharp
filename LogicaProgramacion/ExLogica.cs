@@ -1,6 +1,6 @@
 ﻿namespace LogicaProgramacion;
 
-public class EjerciciosLogica
+public class ExLogica
 {
     public bool EjercicioAnioBisisesto()
     {
