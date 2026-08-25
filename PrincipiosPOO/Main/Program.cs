@@ -16,8 +16,8 @@ namespace PrincipiosPOO
             String info = $"\nInformacion Del Objeto Francisco: \n" +
                           $"Nombre: {francisco.Name} \n" +
                           $"Altura: {francisco.Height} \n" +
-                          $"Peso: {francisco.weight} \n" +
-                          $"Edad: {francisco.Age} \n";
+                          $"Peso: {francisco.weight} kg \n" +
+                          $"Edad: {francisco.Age} anios \n";
 
             Console.WriteLine(info);
 
