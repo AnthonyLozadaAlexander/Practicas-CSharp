@@ -22,6 +22,9 @@ namespace PrincipiosPOO
             Console.WriteLine(info);
 
             francisco.comer("Pizza");
+            francisco.respirar();
+            francisco.ejercicio();
+            francisco.caminar();
 
         }
     }
