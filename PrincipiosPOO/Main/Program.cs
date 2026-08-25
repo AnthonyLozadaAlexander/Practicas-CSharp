@@ -21,6 +21,8 @@ namespace PrincipiosPOO
 
             Console.WriteLine(info);
 
+            francisco.comer("Pizza");
+
         }
     }
 }
