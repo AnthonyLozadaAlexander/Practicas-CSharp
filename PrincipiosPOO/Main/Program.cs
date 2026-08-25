@@ -10,7 +10,9 @@ namespace PrincipiosPOO
         {
             Console.ForegroundColor = ConsoleColor.Green;
             String op = "";
-            Console.WriteLine("Principios De POO en C#");
+            Console.WriteLine("\n------------------------------------------------");
+            Console.WriteLine("            Principios De POO en C#");
+            Console.WriteLine("------------------------------------------------");
             Console.WriteLine("1. Clases y Objetos");
             Console.WriteLine("2. Constructores");
             Console.Write("Selecciones Opcion -> ");
@@ -38,14 +40,33 @@ namespace PrincipiosPOO
                     francisco.respirar();
                     francisco.ejercicio();
                     francisco.caminar();
+
                     break;
                 case "2":
 
+                    
+
                     BankAccount cuenta = new BankAccount("Francisco"); // cuenta con parametro
                     BankAccount cuenta1 = new BankAccount(); // cuenta con valor default
+                    BankAccount cuentaAhorros = new BankAccount();
+
 
                     Console.WriteLine($"\nCuenta 1: {cuenta.Owner}");
-                    Console.WriteLine($"Cuenta 2: {cuenta1.Owner}");
+                    Console.WriteLine($"Cuenta 2: {cuenta1.Owner}\n");
+
+                    System.Console.WriteLine("------------------------------------------------");
+
+                    cuentaAhorros.accountNumber = 0983362883;
+                    cuentaAhorros.Amount = 1500;
+                    cuentaAhorros.isActive = true;
+
+                    string infoCuenta = $"\n Informacion De La Cuenta De Ahorros: \n" +
+                                    $"Numero Cuenta: {cuentaAhorros.accountNumber} \n" +
+                                    $"Monto: {cuentaAhorros.Amount} $\n" +
+                                    $"Estado: {cuentaAhorros.isActive} \n";
+
+
+                    Console.WriteLine(infoCuenta);
 
                     break;
 
