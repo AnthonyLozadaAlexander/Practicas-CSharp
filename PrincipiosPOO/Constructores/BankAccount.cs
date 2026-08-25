@@ -28,6 +28,11 @@ namespace PrincipiosPOO.Constructores
             isActive = true;
         }
 
+        public void generarNumeroCuenta()
+        {
+            var random = new Random();
+            AccountNumber = random.Next();
+        }
 
     }
 }
