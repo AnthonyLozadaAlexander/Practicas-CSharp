@@ -44,11 +44,10 @@ namespace PrincipiosPOO
                     break;
                 case "2":
 
-                    
-
                     BankAccount cuenta = new BankAccount("Francisco"); // cuenta con parametro
                     BankAccount cuenta1 = new BankAccount(); // cuenta con valor default
                     BankAccount cuentaAhorros = new BankAccount();
+                    BankAccount cuentaCorriente = new BankAccount("Francisco Perez");
 
 
                     Console.WriteLine($"\nCuenta 1: {cuenta.Owner}");
@@ -64,6 +63,8 @@ namespace PrincipiosPOO
                                     $"Numero Cuenta: {cuentaAhorros.accountNumber} \n" +
                                     $"Monto: {cuentaAhorros.Amount} $\n" +
                                     $"Estado: {cuentaAhorros.isActive} \n";
+
+                    System.Console.WriteLine("------------------------------------------------");
 
 
                     Console.WriteLine(infoCuenta);
