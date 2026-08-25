@@ -2,7 +2,7 @@ namespace PrincipiosPOO.Constructores
 {
     public class BankAccount
     {
-        public int accountNumber => AccountNumber; // numero de cuenta
+        public int accountNumber => AccountNumber; // el atributo accountNumber toma la referencia de AccountNumber, que es privado y solo puede ser modificado por el constructor
 
         public string Owner => _owner; // el atributo Owner toma la referencia de _owner, que es privado y solo puede ser modificado por el constructor
 
