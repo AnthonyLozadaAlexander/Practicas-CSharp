@@ -7,10 +7,12 @@ namespace PrincipiosPOO
     {
         static void Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             String op = "";
             Console.WriteLine("Principios De POO en C#");
             Console.WriteLine("1. Clases y Objetos");
             Console.WriteLine("2. Constructores");
+            Console.Write("Selecciones -> ");
             op = Console.ReadLine();
             switch (op)
             {
