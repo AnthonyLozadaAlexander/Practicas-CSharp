@@ -6,12 +6,22 @@ namespace PrincipiosPOO
     {
         static void Main(string[] args)
         {
-            
+            // Creamos el objeto de la clase Human
             Human francisco = new Human();
             francisco.Name = "Francisco";
             francisco.Height = 1.69;
             francisco.weight = 82;
             francisco.Age = 22;
+
+            String info = $"\nInformacion Del Objeto Francisco: \n" +
+                          $"Nombre: {francisco.Name} \n" +
+                          $"Altura: {francisco.Height} \n" +
+                          $"Peso: {francisco.weight} \n" +
+                          $"Edad: {francisco.Age} \n";
+
+            Console.WriteLine(info);
+
         }
     }
 }
+
