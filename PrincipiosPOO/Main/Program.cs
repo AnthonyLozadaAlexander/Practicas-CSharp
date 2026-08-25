@@ -8,7 +8,7 @@ namespace PrincipiosPOO
     {
         static void Main(string[] args)
         {
-            Console.ForegroundColor = ConsoleColor.Green;
+
             String op = "";
             Console.WriteLine("\n------------------------------------------------");
             Console.WriteLine("            Principios De POO en C#");
@@ -43,7 +43,7 @@ namespace PrincipiosPOO
 
                     break;
                 case "2":
-
+                    String infoCuentaAhorros = "", infoCuentaCorriente = "";
                     BankAccount cuenta = new BankAccount("Francisco"); // cuenta con parametro
                     BankAccount cuenta1 = new BankAccount(); // cuenta con valor default
                     BankAccount cuentaAhorros = new BankAccount();
@@ -55,19 +55,32 @@ namespace PrincipiosPOO
 
                     System.Console.WriteLine("------------------------------------------------");
 
+                    Console.ForegroundColor = ConsoleColor.Green;
+
                     cuentaAhorros.accountNumber = 0983362883;
                     cuentaAhorros.Amount = 1500;
-                    cuentaAhorros.isActive = true;
+                    // cuentaAhorros.isActive = true;
 
-                    string infoCuenta = $"\n Informacion De La Cuenta De Ahorros: \n" +
+                    infoCuentaAhorros = $"\n Informacion De La Cuenta De Ahorros: \n" +
                                     $"Numero Cuenta: {cuentaAhorros.accountNumber} \n" +
                                     $"Monto: {cuentaAhorros.Amount} $\n" +
                                     $"Estado: {cuentaAhorros.isActive} \n";
 
+                    Console.WriteLine(infoCuentaAhorros);
+
                     System.Console.WriteLine("------------------------------------------------");
 
+                    Console.ForegroundColor = ConsoleColor.Blue;
 
-                    Console.WriteLine(infoCuenta);
+                    cuentaCorriente.Amount = 980;
+                    // cuentaCorriente.isActive = true;
+
+                    infoCuentaCorriente = $"\n Informacion De La Cuenta De Corriente: \n" +
+                                    $"Numero Cuenta: {cuentaCorriente.accountNumber} \n" +
+                                    $"Monto: {cuentaCorriente.Amount} $\n" +
+                                    $"Estado: {cuentaCorriente.isActive} \n";
+
+                    Console.WriteLine(infoCuentaCorriente);
 
                     break;
 
