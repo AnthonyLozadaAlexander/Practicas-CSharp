@@ -10,9 +10,9 @@ namespace PrincipiosPOO.Constructores
 
         public decimal Amount { get; set; } // monto
 
-        public bool isActive { get; set; }
+        public bool isActive { get; set; } // estado de la cuenta
 
-        private int AccountNumber;
+        private int AccountNumber; // numero de cuenta
 
         public BankAccount(string name)
         {
