@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica_Recursividad", "Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicaProgramacion", "LogicaProgramacion\LogicaProgramacion.csproj", "{56D91EFE-10EF-465E-9066-C926434F54F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrincipiosPOO", "PrincipiosPOO\PrincipiosPOO.csproj", "{3A5C49C4-D2AE-4788-9C35-529B782F148E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{56D91EFE-10EF-465E-9066-C926434F54F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56D91EFE-10EF-465E-9066-C926434F54F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56D91EFE-10EF-465E-9066-C926434F54F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A5C49C4-D2AE-4788-9C35-529B782F148E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A5C49C4-D2AE-4788-9C35-529B782F148E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A5C49C4-D2AE-4788-9C35-529B782F148E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A5C49C4-D2AE-4788-9C35-529B782F148E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
