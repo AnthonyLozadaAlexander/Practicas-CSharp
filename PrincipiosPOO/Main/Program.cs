@@ -57,7 +57,8 @@ namespace PrincipiosPOO
 
                     Console.ForegroundColor = ConsoleColor.Green;
 
-                    cuentaAhorros.accountNumber = 0983362883;
+                    // cuentaAhorros.accountNumber = 0983362883;
+                    cuentaAhorros.generarNumeroCuenta();
                     cuentaAhorros.Amount = 1500;
                     // cuentaAhorros.isActive = true;
 
