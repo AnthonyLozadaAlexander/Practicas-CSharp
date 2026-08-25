@@ -1,5 +1,6 @@
 ﻿using System;
 using PrincipiosPOO.Clases;
+using PrincipiosPOO.Constructores;
 
 namespace PrincipiosPOO
 {
@@ -12,7 +13,7 @@ namespace PrincipiosPOO
             Console.WriteLine("Principios De POO en C#");
             Console.WriteLine("1. Clases y Objetos");
             Console.WriteLine("2. Constructores");
-            Console.Write("Selecciones -> ");
+            Console.Write("Selecciones Opcion -> ");
             op = Console.ReadLine();
             switch (op)
             {
@@ -39,6 +40,12 @@ namespace PrincipiosPOO
                     francisco.caminar();
                     break;
                 case "2":
+
+                    BankAccount cuenta = new BankAccount("Francisco"); // cuenta con parametro
+                    BankAccount cuenta1 = new BankAccount(); // cuenta con valor default
+
+                    Console.WriteLine($"\nCuenta 1: {cuenta.Owner}");
+                    Console.WriteLine($"Cuenta 2: {cuenta1.Owner}");
 
                     break;
 
