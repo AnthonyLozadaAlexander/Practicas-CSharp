@@ -1,4 +1,5 @@
-﻿using PrincipiosPOO.Clases;
+﻿using System;
+using PrincipiosPOO.Clases;
 
 namespace PrincipiosPOO
 {
@@ -6,26 +7,46 @@ namespace PrincipiosPOO
     {
         static void Main(string[] args)
         {
-            // Creamos el objeto de la clase Human
-            Human francisco = new Human();
-            francisco.Name = "Francisco";
-            francisco.Height = 1.69;
-            francisco.weight = 82;
-            francisco.Age = 22;
+            String op = "";
+            Console.WriteLine("Principios De POO en C#");
+            Console.WriteLine("1. Clases y Objetos");
+            Console.WriteLine("2. Constructores");
+            op = Console.ReadLine();
+            switch (op)
+            {
 
-            String info = $"\nInformacion Del Objeto Francisco: \n" +
-                          $"Nombre: {francisco.Name} \n" +
-                          $"Altura: {francisco.Height} \n" +
-                          $"Peso: {francisco.weight} kg \n" +
-                          $"Edad: {francisco.Age} anios \n";
+                case "1":
+                    // Creamos el objeto de la clase Human
+                    Human francisco = new Human();
+                    francisco.Name = "Francisco";
+                    francisco.Height = 1.69;
+                    francisco.weight = 82;
+                    francisco.Age = 22;
 
-            Console.WriteLine(info);
+                    String info = $"\nInformacion Del Objeto Francisco: \n" +
+                                  $"Nombre: {francisco.Name} \n" +
+                                  $"Altura: {francisco.Height} \n" +
+                                  $"Peso: {francisco.weight} kg \n" +
+                                  $"Edad: {francisco.Age} anios \n";
 
-            francisco.comer("Pizza");
-            francisco.respirar();
-            francisco.ejercicio();
-            francisco.caminar();
+                    Console.WriteLine(info);
 
+                    francisco.comer("Pizza");
+                    francisco.respirar();
+                    francisco.ejercicio();
+                    francisco.caminar();
+                    break;
+                case "2":
+
+                    break;
+
+                default:
+
+                    Console.WriteLine("Opcion No Valida");
+
+                    break;
+
+            }
         }
     }
 }
