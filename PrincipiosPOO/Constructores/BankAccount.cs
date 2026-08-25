@@ -2,16 +2,26 @@ namespace PrincipiosPOO.Constructores
 {
     public class BankAccount
     {
-        public string Owner { get; set; }
+        public int accountNumber { get; set; } // numero de cuenta
+
+        public string Owner => _owner;
+
+        private string _owner;
+
+        public decimal Amount { get; set; } // monto
+
+        public bool isActive { get; set; }
 
         public BankAccount(string name)
         {
-            Owner = name;
+            _owner = name;
         }
 
         public BankAccount()
         {
-            Owner = "Francisco Perez";
+            _owner = "Francisco Perez";
         }
+
+
     }
 }
