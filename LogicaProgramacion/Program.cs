@@ -6,34 +6,62 @@ namespace LogicaProgramacion
     {
         static void Main(string[] args)
         {
-            bool result = false;
             ExLogica Logica = new ExLogica();
-            ExLeetCode LeetCode = new ExLeetCode(); 
-            
+            ExLeetCode LeetCode = new ExLeetCode();
+
             Console.WriteLine("-----------Menu-----------");
             Console.WriteLine("1. Ejercicios Logica");
             Console.WriteLine("2. Ejercicios LeetCode");
             Console.WriteLine("--------------------------");
-            Console.Write("Seleccione Una Opcion: "); String opcion = Console.ReadLine();
+            Console.Write("Seleccione Una Opcion: "); string opcion = Console.ReadLine();
 
             switch (opcion)
             {
                 case "1":
-                    /*result = Logica.EjercicioAnioBisisesto();
-            Console.WriteLine("El anio ingresado es Bisiesto: " + (result ? "Si" : "No"));*/
-                   // Logica.EjercicioFibonacci();
-                    
+                    Console.WriteLine("1. Ejercicio Anio Bisiesto");
+                    Console.WriteLine("2. Ejercicio Fibonacci");
+                    Console.WriteLine("3. Ejercicio ");
+                    string opc = Console.ReadLine();
+                    switch (opc)
+                    {
+                        case "1":
+                            bool result = false;
+                            result = Logica.EjercicioAnioBisisesto();
+                            Console.WriteLine("El anio ingresado es Bisiesto: " + (result ? "Si" : "No"));
+                            break;
+                        case "2":
+                            Logica.EjercicioFibonacci();
+                            break;
+                        case "3":
+                            break;
+
+                        default:
+                            Console.WriteLine("Opcion Invalida");
+                            break;
+                    }
+
                     break;
                 case "2":
-                    int r = LeetCode.MissingNumber(new int[] { 3, 0, 1 });
-                    Console.WriteLine("Result: " + r);
+                    System.Console.WriteLine("1. Ejercicio Missing Number");
+                    string op = Console.ReadLine();
+                    switch (op)
+                    {
+                        case "1":
+                            int r = LeetCode.MissingNumber(new int[] { 3, 0, 1 });
+                            Console.WriteLine("Result: " + r);
+                            break;
+                        default:
+                            Console.WriteLine("Opcion Invalida");
+                            break;
+                    }
+
                     break;
                 default:
                     Console.WriteLine("Opcion Invalida");
                     break;
             }
-            
-            
+
+
         }
     }
 }
