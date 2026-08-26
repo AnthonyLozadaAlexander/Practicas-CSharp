@@ -1,5 +1,5 @@
 ﻿using System;
-
+// escribir commits en espaniol
 namespace LogicaProgramacion
 {
     class Program
@@ -18,6 +18,7 @@ namespace LogicaProgramacion
             switch (opcion)
             {
                 case "1":
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine("1. Ejercicio Anio Bisiesto");
                     Console.WriteLine("2. Ejercicio Fibonacci");
                     Console.WriteLine("3. Ejercicio ");
@@ -42,6 +43,7 @@ namespace LogicaProgramacion
 
                     break;
                 case "2":
+                    Console.ForegroundColor = ConsoleColor.Yellow;
                     System.Console.WriteLine("1. Ejercicio Missing Number");
                     string op = Console.ReadLine();
                     switch (op)
