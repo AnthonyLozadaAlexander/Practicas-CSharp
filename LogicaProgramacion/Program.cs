@@ -22,7 +22,7 @@ namespace LogicaProgramacion
                     Console.WriteLine("\n1. Ejercicio Anio Bisiesto");
                     Console.WriteLine("2. Ejercicio Fibonacci");
                     Console.WriteLine("3. Ejercicio ");
-                    string opc = Console.ReadLine();
+                    Console.Write("Seleccione Una Opcion -> "); string opc = Console.ReadLine();
                     switch (opc)
                     {
                         case "1":
@@ -45,6 +45,7 @@ namespace LogicaProgramacion
                 case "2":
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     System.Console.WriteLine("\n1. Ejercicio Missing Number");
+                    Console.Write("Seleccione Una Opcion -> ");
                     string op = Console.ReadLine();
                     switch (op)
                     {
