@@ -13,13 +13,13 @@ namespace LogicaProgramacion
             Console.WriteLine("1. Ejercicios Logica");
             Console.WriteLine("2. Ejercicios LeetCode");
             Console.WriteLine("--------------------------");
-            Console.Write("Seleccione Una Opcion: "); string opcion = Console.ReadLine();
+            Console.Write("Seleccione Una Opcion -> "); string opcion = Console.ReadLine();
 
             switch (opcion)
             {
                 case "1":
                     Console.ForegroundColor = ConsoleColor.Blue;
-                    Console.WriteLine("1. Ejercicio Anio Bisiesto");
+                    Console.WriteLine("\n1. Ejercicio Anio Bisiesto");
                     Console.WriteLine("2. Ejercicio Fibonacci");
                     Console.WriteLine("3. Ejercicio ");
                     string opc = Console.ReadLine();
@@ -44,7 +44,7 @@ namespace LogicaProgramacion
                     break;
                 case "2":
                     Console.ForegroundColor = ConsoleColor.Yellow;
-                    System.Console.WriteLine("1. Ejercicio Missing Number");
+                    System.Console.WriteLine("\n1. Ejercicio Missing Number");
                     string op = Console.ReadLine();
                     switch (op)
                     {

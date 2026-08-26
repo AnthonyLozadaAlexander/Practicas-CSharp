@@ -2,18 +2,21 @@
 
 public class ExLogica
 {
+
+    // Ejercicio para determinar si un anio es bisisesto
     public bool EjercicioAnioBisisesto()
     {
         bool result = false;
         int anio = 0;
-        
+
         Console.WriteLine("Ingrese El Año: ");
         anio = Int32.Parse(Console.ReadLine());
         if (anio.Equals(null) || anio <= 0)
         {
             Console.WriteLine("El anio ingresado no es valido");
-            
-        }else if (anio % 4 == 0)
+
+        }
+        else if (anio % 4 == 0)
         {
             result = true;
             if (anio % 100 == 0)
@@ -25,9 +28,11 @@ public class ExLogica
                 }
             }
         }
-        
+
         return result;
     }
+
+    // Ejercicio para determinar la secuencia de Fibonacci
 
     public void EjercicioFibonacci()
     {
