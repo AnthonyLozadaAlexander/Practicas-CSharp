@@ -44,7 +44,7 @@ namespace LogicaProgramacion
                     break;
                 case "2":
                     Console.ForegroundColor = ConsoleColor.Yellow;
-                    System.Console.WriteLine("\n1. Ejercicio Missing Number");
+                    Console.WriteLine("\n1. Ejercicio Missing Number");
                     Console.Write("Seleccione Una Opcion -> ");
                     string op = Console.ReadLine();
                     switch (op)
