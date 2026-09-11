@@ -61,5 +61,59 @@ public class ExLogica
         }
 
     }
+
+    public void EjercicioTresNumerosDescendentes()
+    {
+        int a = 0;
+        int b = 0;
+        int c = 0;
+
+        Console.WriteLine("A: " + a);
+        Console.WriteLine("B: " + b);
+        Console.WriteLine("C: " + c);
+
+        if (a >= b && a >= c)
+        {
+            Console.WriteLine("A: " + a);
+            if (b >= c)
+            {
+                Console.WriteLine("B: " + b);
+                Console.WriteLine("C: " + c);
+            }
+            else
+            {
+                Console.WriteLine("C: " + c);
+                Console.WriteLine("B: " + b);
+            }
+        }
+        else if ((c >= a) && (c >= b))
+        {
+            Console.WriteLine("C: " + c);
+            if (a >= b)
+            {
+                Console.WriteLine("A: " + a);
+                Console.WriteLine("B: " + b);
+            }
+            else
+            {
+                Console.WriteLine("B: " + b);
+                Console.WriteLine("A: " + a);
+            }
+        }
+        else
+        {
+            Console.WriteLine("B: " + b);
+            if (a >= c)
+            {
+                Console.WriteLine("A: " + a);
+                Console.WriteLine("C: " + c);
+            }
+            else
+            {
+                Console.WriteLine("C: " + c);
+                Console.WriteLine("A: " + a);
+            }
+        }
+    }
 }
 
