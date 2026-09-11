@@ -21,7 +21,7 @@ namespace LogicaProgramacion
                     Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine("\n1. Ejercicio Anio Bisiesto");
                     Console.WriteLine("2. Ejercicio Fibonacci");
-                    Console.WriteLine("3. Ejercicio ");
+                    Console.WriteLine("3. Ejercicio Ingrese 3 Numeros y Imprima Descendente");
                     Console.Write("Seleccione Una Opcion -> "); string opc = Console.ReadLine();
                     switch (opc)
                     {
@@ -34,6 +34,7 @@ namespace LogicaProgramacion
                             Logica.EjercicioFibonacci();
                             break;
                         case "3":
+                            Logica.EjercicioTresNumerosDescendentes();
                             break;
 
                         default:
