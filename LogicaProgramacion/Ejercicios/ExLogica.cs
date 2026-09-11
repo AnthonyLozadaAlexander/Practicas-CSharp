@@ -68,6 +68,7 @@ public class ExLogica
         int b = 0;
         int c = 0;
 
+        Console.WriteLine("---------------------------------------");
         Console.WriteLine("A: " + a);
         Console.Write(" -> ");
         a = Int32.Parse(Console.ReadLine());
@@ -77,6 +78,8 @@ public class ExLogica
         Console.WriteLine("C: " + c);
         Console.Write(" -> ");
         c = Int32.Parse(Console.ReadLine());
+
+        Console.WriteLine("---------------------------------------");
 
         if (a >= b && a >= c)
         {
@@ -120,6 +123,8 @@ public class ExLogica
                 Console.WriteLine("A: " + a);
             }
         }
+        
+        Console.WriteLine("---------------------------------------");
     }
 }
 
