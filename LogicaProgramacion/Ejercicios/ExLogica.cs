@@ -126,5 +126,33 @@ public class ExLogica
         
         Console.WriteLine("---------------------------------------");
     }
+
+    public void EjercicioDeterminarTriangulo()
+    {
+        int a  = 0;
+        int b = 0;
+        int c = 0;
+
+        Console.WriteLine("Ingrese El Cateto A: "); a = Convert.ToInt16(Console.ReadLine());
+        Console.WriteLine("Ingrese El Cateto B: "); b = Convert.ToInt16(Console.ReadLine());
+        Console.WriteLine("Ingrese El Cateto C: "); c = Convert.ToInt16(Console.ReadLine());
+
+        /// Todos sus catetos iguales
+        if(a == b && b == c)
+        {
+            Console.WriteLine("El Triangulo Es Equilatero");
+        }else if(a== b && b != c) // Dos catetos iguales y uno diferente
+        {
+            Console.WriteLine("Es un Triangulo Isosceles");
+            if(b == c && a != c) // Dos catetos iguales y uno diferente
+            {
+                Console.WriteLine("Es un Triangulo Isosceles");    
+            }
+            
+        }else if(a != b && b != c) // todos sus catetos diferentes/distintos
+        {
+            Console.WriteLine("Es un triangulo Escaleno");
+        }
+    }
 }
 
