@@ -141,17 +141,14 @@ public class ExLogica
         if(a == b && b == c)
         {
             Console.WriteLine("El Triangulo Es Equilatero");
-        }else if(a== b && b != c) // Dos catetos iguales y uno diferente
-        {
-            Console.WriteLine("Es un Triangulo Isosceles");
-            if(b == c && a != c) // Dos catetos iguales y uno diferente
-            {
-                Console.WriteLine("Es un Triangulo Isosceles");    
-            }
             
-        }else if(a != b && b != c) // todos sus catetos diferentes/distintos
+        }else if(a != b && b != c && c != a) // todos sus catetos diferentes/distintos
         {
             Console.WriteLine("Es un triangulo Escaleno");
+        }
+        else // Dos catetos Iguales y Uno Diferente
+        {
+            Console.WriteLine("Es un triangulo Isosceles");
         }
     }
 }
