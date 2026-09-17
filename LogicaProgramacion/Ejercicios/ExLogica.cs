@@ -151,5 +151,39 @@ public class ExLogica
             Console.WriteLine("Es un triangulo Isosceles");
         }
     }
+
+    /*
+    Desarrolla un programa en consola que actúe como una caja registradora básica. El sistema debe solicitar al usuario que ingrese el costo total de su compra. A partir de ese valor monetario, el programa debe aplicar reglas de negocio y mostrar en pantalla el monto final a pagar:
+
+    Si la compra es menor a 50 dólares, no se aplica ningún descuento (paga el total exacto).
+
+    Si la compra es desde 50 hasta 100 dólares (inclusive), se le aplica un 10% de descuento al total.
+
+    Si la compra supera estrictamente los 100 dólares, recibe un 20% de descuento.
+    */
+
+    public void cajaBasica(double costoTotal)
+    {
+        double total = 0.0;
+        double descuento = 0.0;
+
+        if(costoTotal > 50 && costoTotal <= 100)
+        {
+            descuento = costoTotal * 0.10;
+            
+        }else if(costoTotal > 100)
+        {
+            descuento = costoTotal * 0.20;
+        }
+
+        Console.WriteLine("Compra Total: " + costoTotal);
+        Console.WriteLine("Descuento Aplicado: " + descuento);
+
+        total = costoTotal - descuento;
+
+        Console.WriteLine("Total a Pagar: " + total);
+
+    }
+    
 }
 
