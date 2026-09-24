@@ -184,6 +184,44 @@ public class ExLogica
         Console.WriteLine("Total a Pagar: " + total);
 
     }
+
+    /* Desarrolla un programa en consola que reciba un arreglo de números enteros y cambie el orden de sus elementos para que queden exactamente al revés. La restricción principal de este reto (lo que significa resolverlo "in-place") es que no puedes instanciar un segundo arreglo para ir copiando los números al revés. Debes modificar el arreglo original intercambiando los valores matemáticamente dentro de su propio espacio de memoria.
+
+        Ejemplo de Ejecución:
+
+        Entrada: [10, 20, 30, 40, 50]
+
+        Salida: [50, 40, 30, 20, 10] */
+
+    public void invertirArreglo(int[] arr)
+    {
+        int n = arr.Length-1;
+        int aux_i = 0, aux_j = 0;
+        int j = 0;
+        int i = n;
+        
+        while(i >= 0)
+        {
+            aux_j = arr[j];
+            aux_i = arr[i];
+
+            arr[j] = aux_i;
+            arr[i] = aux_j;
+
+            if(i == n / 2)
+            {
+                i = 0;
+            }
+            else
+            {
+                j++;
+            } 
+
+            i--;
+        }
+        
+
+    }
     
 }
 
