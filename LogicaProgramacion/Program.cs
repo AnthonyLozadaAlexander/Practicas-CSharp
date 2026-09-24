@@ -47,6 +47,7 @@ namespace LogicaProgramacion
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine("\n1. Ejercicio Missing Number");
                     Console.WriteLine($"2. Ejercicio Two Sum");
+                    Console.WriteLine("3. Ejercicio Inversion Arreglo");
                     Console.Write("Seleccione Una Opcion -> ");
                     string op = Console.ReadLine();
                     switch (op)
@@ -79,6 +80,23 @@ namespace LogicaProgramacion
                             }
 
                             break;
+
+                        case "3":
+                            int[] a = {10, 20, 30, 40, 50, 60};
+                            Console.WriteLine("\nArreglo Original:");
+                            for (int i = 0; i < a.Length; i++)
+                            {
+                                Console.WriteLine($"Index[{i}] = {a[i]}");
+                            }
+
+                            Console.WriteLine("\nArreglo Invertido:");
+                            Logica.invertirArreglo(a);
+                            for (int i = 0; i < a.Length; i++)
+                            {
+                                Console.WriteLine($"Index[{i}] = {a[i]}");
+                            }
+
+                            break;
                         default:
                             Console.WriteLine("Opcion Invalida");
                             break;
@@ -91,6 +109,6 @@ namespace LogicaProgramacion
             }
 
 
-        }
+        } 
     }
 }
