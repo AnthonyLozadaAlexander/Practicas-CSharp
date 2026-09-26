@@ -1,4 +1,6 @@
-﻿namespace LogicaProgramacion;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace LogicaProgramacion;
 
 public class ExLeetCode
 {
@@ -48,14 +50,14 @@ Explicación: nums[1] + nums[2] (2 + 4) es igual a 6.
     {
         int sum = 0;
         int[] indexs = new int[2];
-        indexs = [0,0]; // Inicializamos el arreglo de índices con valores predeterminados
+        indexs = [0, 0]; // Inicializamos el arreglo de índices con valores predeterminados
 
         for (int i = 0; i < nums.Length; i++)
         {
             for (int j = i + 1; j < nums.Length; j++)
             {
                 sum = nums[i] + nums[j];
-                if(sum.Equals(target))
+                if (sum.Equals(target))
                 {
                     indexs[0] = i;
                     indexs[1] = j;
@@ -63,10 +65,59 @@ Explicación: nums[1] + nums[2] (2 + 4) es igual a 6.
                     i = nums.Length; // Salir del bucle externo
                 }
             }
-            
+
         }
 
         return indexs;
-        
+
+    }
+
+    /* Enunciado:
+    Imagina que estás analizando el registro de actividad de un usuario en un sistema. Tienes un arreglo de números enteros llamado registros que únicamente contiene 1 (usuario conectado) y 0 (usuario desconectado).
+
+    Tu misión es crear una función que recorra este arreglo y devuelva el número máximo de días consecutivos que el usuario estuvo conectado.
+
+    Ejemplos:
+
+    Ejemplo 1:
+
+    Entrada: registros = [1, 1, 0, 1, 1, 1]
+
+    Salida: 3
+
+    Explicación: Los primeros dos días se conectó (racha de 2). Luego se desconectó (la racha se rompe). Luego se conectó tres días seguidos (racha de 3). La racha más larga es 3.
+
+    Ejemplo 2:
+
+    Entrada: registros = [1, 0, 1, 1, 0, 1]
+
+    Salida: 2 */
+
+    public int encontrarRachaMax(int[] registros)
+    {
+        int racha = encontrarRachaMaxR(registros, 0, 0, 0);
+        return racha;
+    }
+
+    private int encontrarRachaMaxR(int[] registros, int i, int count, int countMaximo)
+    {
+        if (i >= registros.Length)
+        {
+            return countMaximo;
+        }
+
+        if (registros[i] == 1)
+        {
+            count++;
+            countMaximo = Math.Max(count, countMaximo); // contadorRachaMaxima 
+        }
+        else
+        {
+            count = 0; // reinicia contadorActual
+        }
+
+        count = encontrarRachaMaxR(registros, i + 1, count, countMaximo);
+
+        return count;
     }
 }
