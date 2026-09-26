@@ -123,13 +123,13 @@ public class ExLogica
                 Console.WriteLine("A: " + a);
             }
         }
-        
+
         Console.WriteLine("---------------------------------------");
     }
 
     public void EjercicioDeterminarTriangulo()
     {
-        int a  = 0;
+        int a = 0;
         int b = 0;
         int c = 0;
 
@@ -138,11 +138,12 @@ public class ExLogica
         Console.WriteLine("Ingrese El Cateto C: "); c = Convert.ToInt16(Console.ReadLine());
 
         /// Todos sus catetos iguales
-        if(a == b && b == c)
+        if (a == b && b == c)
         {
             Console.WriteLine("El Triangulo Es Equilatero");
-            
-        }else if(a != b && b != c && c != a) // todos sus catetos diferentes/distintos
+
+        }
+        else if (a != b && b != c && c != a) // todos sus catetos diferentes/distintos
         {
             Console.WriteLine("Es un triangulo Escaleno");
         }
@@ -167,11 +168,12 @@ public class ExLogica
         double total = 0.0;
         double descuento = 0.0;
 
-        if(costoTotal > 50 && costoTotal <= 100)
+        if (costoTotal > 50 && costoTotal <= 100)
         {
             descuento = costoTotal * 0.10;
-            
-        }else if(costoTotal > 100)
+
+        }
+        else if (costoTotal > 100)
         {
             descuento = costoTotal * 0.20;
         }
@@ -195,12 +197,12 @@ public class ExLogica
 
     public void invertirArreglo(int[] arr)
     {
-        int n = arr.Length-1;
+        int n = arr.Length;
         int aux_i = 0, aux_j = 0;
         int j = 0;
-        int i = n;
-        
-        while(i >= 0)
+        int i = n - 1;
+
+        while (i >= 0)
         {
             aux_j = arr[j];
             aux_i = arr[i];
@@ -208,20 +210,18 @@ public class ExLogica
             arr[j] = aux_i;
             arr[i] = aux_j;
 
-            if(i == n / 2)
+            if (i == n / 2)
             {
                 i = 0;
             }
             else
             {
                 j++;
-            } 
+            }
 
             i--;
         }
-        
 
     }
-    
 }
 
