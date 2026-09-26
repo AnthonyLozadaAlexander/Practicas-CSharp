@@ -149,7 +149,7 @@ Entrada: nums = [4, 0, 5, 0, 1]
 Salida: [4, 5, 1, 0, 0] */
 
 
-    public void remplazarCeros(int[] nums, int i, int counts)
+    public void moverCeros(int[] nums, int i, int counts)
     {
         int n = nums.Length;
 
@@ -164,9 +164,12 @@ Salida: [4, 5, 1, 0, 0] */
                 counts++;
             }
 
-            remplazarCeros(nums, i + 1, counts);
+            moverCeros(nums, i + 1, counts);
 
-            nums[n - counts] = 0;
+            if (counts > 0)
+            {
+                nums[n - counts] = 0;
+            }
         }
 
     }
