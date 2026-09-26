@@ -110,10 +110,10 @@ namespace LogicaProgramacion
                             break;
                         case "5":
 
-                            int[] nums = { 0, 1, 0, 3, 21 };
+                            int[] nums = { 0, 1, 0, 0, 21 };
                             leerArreglo(nums);
                             int k = 0;
-                            LeetCode.remplazarCeros(nums, k, 0);
+                            LeetCode.moverCeros(nums, k, 0);
 
                             Console.WriteLine("\nArreglo Con Ceros Movidos Al Final");
                             leerArreglo(nums);
