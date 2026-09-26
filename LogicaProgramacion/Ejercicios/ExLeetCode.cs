@@ -120,4 +120,54 @@ Explicación: nums[1] + nums[2] (2 + 4) es igual a 6.
 
         return count;
     }
+
+    /* Ejercicio: Mover Ceros al Final(Move Zeroes)
+Enunciado:
+Dado un arreglo de números enteros nums, debes mover todos los ceros(0) al final del arreglo, manteniendo intacto el orden original de los números que no sean cero.
+
+Restricción importante:
+Debes modificar el arreglo directamente(in -place).No puedes crear un segundo arreglo auxiliar para copiar los valores.
+
+Ejemplos:
+
+Ejemplo 1:
+
+Entrada: nums = [0, 1, 0, 3, 12]
+
+Salida: [1, 3, 12, 0, 0]
+
+Ejemplo 2:
+
+Entrada: nums = [0]
+
+Salida: [0]
+
+Ejemplo 3:
+
+Entrada: nums = [4, 0, 5, 0, 1]
+
+Salida: [4, 5, 1, 0, 0] */
+
+
+    public void remplazarCeros(int[] nums, int i, int counts)
+    {
+        int n = nums.Length;
+
+        if (i < n)
+        {
+            if (nums[i] != 0)
+            {
+                nums[i - counts] = nums[i];
+            }
+            else
+            {
+                counts++;
+            }
+
+            remplazarCeros(nums, i + 1, counts);
+
+            nums[n - counts] = 0;
+        }
+
+    }
 }
