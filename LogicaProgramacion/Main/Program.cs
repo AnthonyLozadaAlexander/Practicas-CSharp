@@ -49,6 +49,7 @@ namespace LogicaProgramacion
                     Console.WriteLine($"2. Ejercicio Two Sum");
                     Console.WriteLine("3. Ejercicio Inversion Arreglo");
                     Console.WriteLine("4. Ejercicio Contador Maximo De Racha");
+                    Console.WriteLine("5. Ejercicio Mover Ceros");
                     Console.Write("Seleccione Una Opcion -> ");
                     string op = Console.ReadLine();
                     switch (op)
@@ -106,6 +107,16 @@ namespace LogicaProgramacion
                             int racha = LeetCode.encontrarRachaMax(registros);
                             Console.WriteLine($"\nLa Racha fue De: {racha} Dias Conectados");
 
+                            break;
+                        case "5":
+
+                            int[] nums = { 0, 1, 0, 3, 21 };
+                            leerArreglo(nums);
+                            int k = 0;
+                            LeetCode.remplazarCeros(nums, k, 0);
+
+                            Console.WriteLine("\nArreglo Con Ceros Movidos Al Final");
+                            leerArreglo(nums);
                             break;
                         default:
                             Console.WriteLine("Opcion Invalida");
