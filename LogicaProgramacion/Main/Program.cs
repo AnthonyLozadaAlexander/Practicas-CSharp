@@ -8,10 +8,12 @@ namespace LogicaProgramacion
         {
             ExLogica Logica = new ExLogica();
             ExLeetCode LeetCode = new ExLeetCode();
+            ExLINQ LINQ = new ExLINQ();
 
             Console.WriteLine("-----------Menu-----------");
             Console.WriteLine("1. Ejercicios Logica");
             Console.WriteLine("2. Ejercicios LeetCode");
+            Console.WriteLine("3. Ejercicios LINQ");
             Console.WriteLine("--------------------------");
             Console.Write("Seleccione Una Opcion -> "); string opcion = Console.ReadLine();
 
@@ -121,6 +123,24 @@ namespace LogicaProgramacion
                         default:
                             Console.WriteLine("Opcion Invalida");
                             break;
+                    }
+
+                    break;
+
+                case "3":
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("\n1. Ejercicio Filtrado Calificaciones");
+                    string o = Console.ReadLine();
+                    switch (o)
+                    {
+                        case "1":
+                            LINQ.filtrarCalificaciones();
+                            break;
+
+                        default:
+                            Console.WriteLine("Opcion Invalida");
+                            break;
+
                     }
 
                     break;
