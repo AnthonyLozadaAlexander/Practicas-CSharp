@@ -130,6 +130,8 @@ namespace LogicaProgramacion
                 case "3":
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.WriteLine("\n1. Ejercicio Filtrado Calificaciones");
+                    Console.WriteLine("Seleccione Un Ejercicio");
+                    Console.Write("-> ");
                     string o = Console.ReadLine();
                     switch (o)
                     {
