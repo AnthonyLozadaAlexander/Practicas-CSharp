@@ -6,7 +6,7 @@ public class ExLINQ
 {
     public void imprimirLista(List<int> n)
     {
-        n.ForEach(n => Console.WriteLine(n));
+        n.ForEach(elemento => Console.Write(elemento + ", "));
     }
 
     public void filtrarCalificaciones()
@@ -19,17 +19,17 @@ public class ExLINQ
         Console.WriteLine("     Calificaciones Totales");
         Console.WriteLine("---------------------------------");
         imprimirLista(calificaciones);
-        Console.WriteLine("---------------------------------");
+        Console.WriteLine("\n---------------------------------");
         aprobados = calificaciones.Where(n => n >= 11).ToList();
 
         Console.WriteLine("Calificaciones Aprobadas");
         imprimirLista(aprobados);
         reprobados = calificaciones.Where(n => n < 11 && n % 2 == 0).ToList();
-        Console.WriteLine("---------------------------------");
+        Console.WriteLine("\n---------------------------------");
         Console.WriteLine("Calificaciones Reprobadas y Pares");
         imprimirLista(reprobados);
 
-        Console.WriteLine("---------------------------------");
+        Console.WriteLine("\n---------------------------------");
         Console.WriteLine("Cantidad De Notas Excelentes");
         var countExcelentes = calificaciones.Count(n => n >= 18);
         Console.WriteLine(countExcelentes);
